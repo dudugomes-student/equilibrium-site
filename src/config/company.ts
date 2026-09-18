@@ -1,0 +1,3 @@
+import type {CompanyConfig} from '../types';
+// Fonte única para contatos e dados institucionais. Preencha os campos nulos quando confirmados.
+export const company:CompanyConfig={name:'Equilibrium Multi – Serviços de Saúde',shortName:'Equilibrium Multi',email:'contato@equilibriummulti.com.br',phones:[{label:'Telefone e WhatsApp 1',display:'(11) 96722-8000',digits:'5511967228000'},{label:'Telefone e WhatsApp 2',display:'(11) 97051-7705',digits:'5511970517705'}],address:null,cnpj:null,technicalResponsible:null,professionalCouncil:null,proposalEndpoint:null,socials:null};export const whatsappUrl=(digits=company.phones[0].digits,message='Olá, gostaria de solicitar uma proposta à Equilibrium Multi.')=>`https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
